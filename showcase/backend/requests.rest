@@ -1,0 +1,68 @@
+### 
+# get all projects
+GET http://localhost:8000/projects
+Content-Type: application/json
+
+###
+# get a project tasks
+GET http://localhost:8000/projects/1/tasks
+Content-Type: application/json
+
+###
+# create a project
+POST http://localhost:8000/projects
+
+{
+    "name": "test",
+    "description": "test project creation",
+    "tasks": []
+}
+
+###
+# get the test project created, use the id of the previous response
+GET http://localhost:8000/projects/3
+Content-Type: application/json
+
+###
+# create a task for this project
+POST http://localhost:8000/projects/3/tasks
+Content-Type: application/json
+
+{
+    "title": "test #1",
+    "description": "test descript",
+    "completed": false,
+    "due_at": "2025-06-25",
+    "type": "in_progress",
+    "tags": [
+      "test"
+    ]
+}
+
+###
+# get the tasks of the test project
+GET http://localhost:8000/projects/3/tasks
+Content-Type: application/json
+
+###
+# delete this only task
+DELETE http://localhost:8000/projects/3/tasks/11
+
+###
+# check the tasks
+GET http://localhost:8000/projects/3/tasks
+Content-Type: application/json
+
+###
+# delete the first project
+DELETE http://localhost:8000/projects/1
+
+###
+# check all the projects
+GET http://localhost:8000/projects
+
+###
+# save the state on the mock data of the container
+POST http://localhost:8000/admin/save
+# now re run the container and check that the info is the save as the previous session
+###

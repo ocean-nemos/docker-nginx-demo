@@ -1,0 +1,116 @@
+{
+  "1": {
+    "name": "Website Redesign",
+    "description": "Complete overhaul of the company website",
+    "created_at": "2025-04-15",
+    "tasks": [
+      {
+        "id": 1,
+        "title": "Create wireframes",
+        "description": "Design initial wireframes for homepage and product pages",
+        "completed": true,
+        "due_at": "2025-04-25",
+        "created_at": "2025-04-15",
+        "type": "done",
+        "tags": ["design", "ui"]
+      },
+      {
+        "id": 2,
+        "title": "Develop homepage",
+        "description": "Implement homepage based on approved wireframes",
+        "completed": false,
+        "due_at": "2025-05-05",
+        "created_at": "2025-04-18",
+        "type": "in_progress",
+        "tags": ["frontend", "html", "css"]
+      },
+      {
+        "id": 3,
+        "title": "Implement authentication",
+        "description": "Create login and registration flows",
+        "completed": false,
+        "due_at": "2025-05-10",
+        "created_at": "2025-04-20",
+        "type": "todo",
+        "tags": ["backend", "security"]
+      },
+      {
+        "id": 4,
+        "title": "User testing",
+        "description": "Conduct user testing sessions with prototype",
+        "completed": false,
+        "due_at": "2025-05-15",
+        "created_at": "2025-04-22",
+        "type": "todo",
+        "tags": ["testing", "user-research"]
+      },
+      {
+        "id": 5,
+        "title": "SEO optimization",
+        "description": "Optimize site content and structure for search engines",
+        "completed": false,
+        "due_at": "2025-05-20",
+        "created_at": "2025-04-25",
+        "type": "todo",
+        "tags": ["seo", "marketing"]
+      }
+    ]
+  },
+  "2": {
+    "name": "Mobile App Development",
+    "description": "Create a companion mobile app for our platform",
+    "created_at": "2025-04-20",
+    "tasks": [
+      {
+        "id": 6,
+        "title": "App architecture planning",
+        "description": "Define the app structure and technology stack",
+        "completed": true,
+        "due_at": "2025-04-30",
+        "created_at": "2025-04-20",
+        "type": "done",
+        "tags": ["planning", "architecture"]
+      },
+      {
+        "id": 7,
+        "title": "UI design",
+        "description": "Create UI mockups for all key screens",
+        "completed": true,
+        "due_at": "2025-05-10",
+        "created_at": "2025-04-22",
+        "type": "done",
+        "tags": ["design", "ui"]
+      },
+      {
+        "id": 8,
+        "title": "Core functionality implementation",
+        "description": "Develop the main features of the app",
+        "completed": false,
+        "due_at": "2025-05-25",
+        "created_at": "2025-04-25",
+        "type": "in_progress",
+        "tags": ["development", "coding"]
+      },
+      {
+        "id": 9,
+        "title": "API integration",
+        "description": "Connect app to backend services",
+        "completed": false,
+        "due_at": "2025-06-05",
+        "created_at": "2025-04-28",
+        "type": "todo",
+        "tags": ["api", "backend"]
+      },
+      {
+        "id": 10,
+        "title": "Beta testing",
+        "description": "Release beta version to test group",
+        "completed": false,
+        "due_at": "2025-06-15",
+        "created_at": "2025-05-01",
+        "type": "todo",
+        "tags": ["testing", "qa"]
+      }
+    ]
+  }
+}

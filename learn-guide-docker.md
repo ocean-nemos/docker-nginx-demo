@@ -158,6 +158,14 @@ docker exec -it container_name_or_id command_to_run
 docker exec -it container_name_or_id bash
 ``` 
 
+#### 5.4.8 Build
+
+To build an image from a Dockerfile:
+
+```bash
+docker build -t image_name:tag .
+```
+
 ---
 
 ### 5.5 Docker Volumes
@@ -208,6 +216,12 @@ To remove an unused image:
 
 ```bash
 docker image rm image_name:tag
+```
+
+To remove all images:
+
+```bash
+docker image prune -a
 ```
 
 ---
@@ -327,3 +341,17 @@ services:
 volumes:  # Define volumes
    db-data:  # Named volume
 ```
+
+### 5.11 Dockerfile syntax
+
+- FROM <image>:<tag> - Specifies the base image to use for the new image. This is the first line in a Dockerfile and is required.
+
+- RUN <command> - Executes a command in the shell during the image build process. This is used to install packages, copy files, etc.
+
+- COPY <source> <destination> - Copies files from the host machine to the image. The source is relative to the build context (the directory where the Dockerfile is located).
+
+- ADD <source> <destination> - Similar to COPY, but also supports URLs and tar file extraction. It is recommended to use COPY unless you need the additional features of ADD.
+
+- CMD <command> - Specifies the command to run when the container starts. This is the default command and can be overridden by the user when running the container.
+
+- WORKDIR <path> - Sets the working directory for the following instructions. This is similar to the cd command in the shell.
