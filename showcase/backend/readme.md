@@ -7,7 +7,12 @@
 
 ## How to test Dockerfile
 
-First build:
+First enter on the folder:
+```bash
+cd showcase/backend
+```
+
+Then build the image:
 ```bash
 sudo docker build -t api-img .
 ```
