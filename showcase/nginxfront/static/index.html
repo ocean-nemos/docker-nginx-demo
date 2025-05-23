@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>🍹 docker</title>
+    <title>🍹 todos</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -12,35 +12,23 @@
         Todo list
     </h1>
 
-    <div class="project-selector">
-        <div class="project-selector__header">
-            <h2>Select Project</h2>
-            <button id="add-project" class="btn">+ New</button>
+    <div class="app-container">
+        <div class="project-selector">
+            <div class="project-selector__header">
+                <h2>Select Project</h2>
+                <button id="add-project" class="btn">+ New</button>
+            </div>
+            <div class="project-cards">
+            </div>
         </div>
-        <div class="project-cards">
-            <div class="project-card active" data-id="1">
-                <div class="project-color" style="background-color: #FF6B6B;"></div>
-                <div class="project-info">
-                    <h3>Personal</h3>
-                    <span class="task-count">5 tasks</span>
-                </div>
-                <button class="delete-project" title="Delete project">&times;</button>
+
+        <div class="task-container">
+            <div class="task-header">
+                <h2 id="current-project-name">Tasks</h2>
+                <button id="add-task" class="btn">+ New Task</button>
             </div>
-            <div class="project-card" data-id="2">
-                <div class="project-color" style="background-color: #4ECDC4;"></div>
-                <div class="project-info">
-                    <h3>Work</h3>
-                    <span class="task-count">3 tasks</span>
-                </div>
-                <button class="delete-project" title="Delete project">&times;</button>
-            </div>
-            <div class="project-card" data-id="3">
-                <div class="project-color" style="background-color: #FFD166;"></div>
-                <div class="project-info">
-                    <h3>Shopping</h3>
-                    <span class="task-count">2 tasks</span>
-                </div>
-                <button class="delete-project" title="Delete project">&times;</button>
+            <div class="task-grid">
+                <!-- Tasks will be populated here by JavaScript -->
             </div>
         </div>
     </div>
