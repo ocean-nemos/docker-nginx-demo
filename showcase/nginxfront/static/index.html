@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>🍹 todos</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
 
     <h1 class="title">
         Todo list
     </h1>
+    <button id="save-data" class="btn btn-save">Save Mock Data</button>
 
     <div class="app-container">
         <div class="project-selector">
@@ -33,6 +36,51 @@
         </div>
     </div>
 
+    <!-- Task Detail Modal -->
+    <div id="task-modal" class="modal">
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <h2 class="modal-title">Task Details</h2>
+            <div class="modal-body">
+                <div class="form-group">
+                    <label for="modal-task-title">Title:</label>
+                    <input type="text" id="modal-task-title" class="modal-input">
+                </div>
+                <div class="form-group">
+                    <label for="modal-task-description">Description:</label>
+                    <textarea id="modal-task-description" class="modal-input" rows="3"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="modal-task-created-date">Created:</label>
+                    <input type="text" id="modal-task-created-date" class="modal-input" readonly>
+                </div>
+                <div class="form-group">
+                    <label for="modal-task-due-date">Due Date:</label>
+                    <input type="date" id="modal-task-due-date" class="modal-input">
+                </div>
+                <div class="form-group">
+                    <label for="modal-task-type">Status:</label>
+                    <select id="modal-task-type" class="modal-input">
+                        <option value="todo">To Do</option>
+                        <option value="in_progress">In Progress</option>
+                        <option value="done">Done</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>
+                        <input type="checkbox" id="modal-task-completed">
+                        Completed
+                    </label>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button id="modal-delete-task" class="btn btn-danger">Delete</button>
+                <button id="modal-update-task" class="btn">Update</button>
+            </div>
+        </div>
+    </div>
+
     <script src="main.js"></script>
 </body>
+
 </html>
